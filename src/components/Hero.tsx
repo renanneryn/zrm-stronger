@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 font-light leading-relaxed"
+            className="text-slate-200 text-lg md:text-xl max-w-2xl mb-10 font-medium leading-relaxed drop-shadow-md"
           >
             Especialistas em construções e empreendimentos de alto padrão. Do alicerce ao acabamento, 
             entregamos resultados que valorizam seu imóvel residencial, comercial ou industrial com precisão técnica.

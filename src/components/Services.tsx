@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { Building2, Paintbrush, Droplets, Grid3X3, Zap, HardHat } from "lucide-react";
 
-import fachadaImg from "../assets/fachada.jpg";
 import construcaoImg from "../assets/construcao.jpg";
-import impermeabilizacaoImg from "../assets/impermeabilizacao.jpg";
+import fachadaImg from "../assets/fachada-1.jpg";
+import impermeabilidadeImg from "../assets/impermeabilidade.jpg";
 import acabamentosImg from "../assets/acabamentos.jpg";
-import instalacoesImg from "../assets/instalacoes.jpg";
-import equipamentosImg from "../assets/equipamentos.jpg";
+import tecnicasImg from "../assets/tecnicas.jpg";
+import aluguelImg from "../assets/aluguel.jpg";
 
 const services = [
   {
@@ -23,9 +23,9 @@ const services = [
   },
   {
     title: "Impermeabilização",
-    desc: "Soluções definitivas contra infiltrações com mantas asfálticas e impermeabilizantes líquidos.",
+    desc: "Soluções definitivas contra infiltrações em imóveis residenciais, comerciais e industriais.",
     icon: Droplets,
-    img: impermeabilizacaoImg
+    img: impermeabilidadeImg
   },
   {
     title: "Acabamentos & Interiores",
@@ -37,13 +37,13 @@ const services = [
     title: "Instalações Técnicas",
     desc: "Projetos e execuções de redes elétricas e hidráulicas residenciais e industriais.",
     icon: Zap,
-    img: instalacoesImg
+    img: tecnicasImg
   },
   {
     title: "Aluguel de Equipamentos Comerciais e Industriais",
     desc: "Andaimes em grandes e pequenos navios, pintura em balsas e revestimento de maquinário industrial.",
     icon: HardHat,
-    img: equipamentosImg
+    img: aluguelImg
   }
 ];
 
@@ -119,15 +119,13 @@ export default function Services() {
                 </div>
 
                 <div className="absolute inset-0 z-10 p-8 flex flex-col justify-end">
-                  <div className="w-12 h-12 bg-brand-gold rounded font-bold flex items-center justify-center text-brand-concrete mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-brand-gold rounded font-bold flex flex-shrink-0 items-center justify-center text-brand-concrete mb-4 group-hover:scale-110 transition-transform">
                     <service.icon className="w-6 h-6" />
                   </div>
-                  <div className="min-h-[64px] flex items-start mb-2">
-                    <h4 className="text-2xl font-bold italic tracking-tighter uppercase">
-                      {service.title}
-                    </h4>
-                  </div>
-                  <div className="h-16">
+                  <h4 className="text-2xl font-bold italic tracking-tighter uppercase leading-tight mb-2">
+                    {service.title}
+                  </h4>
+                  <div className="h-16 mt-2">
                     <p className="text-slate-300 text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transform translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       {service.desc}
                     </p>
