@@ -1,42 +1,49 @@
 import { motion } from "motion/react";
 import { Building2, Paintbrush, Droplets, Grid3X3, Zap, HardHat } from "lucide-react";
 
+import fachadaImg from "../assets/fachada.jpg";
+import construcaoImg from "../assets/construcao.jpg";
+import impermeabilizacaoImg from "../assets/impermeabilizacao.jpg";
+import acabamentosImg from "../assets/acabamentos.jpg";
+import instalacoesImg from "../assets/instalacoes.jpg";
+import equipamentosImg from "../assets/equipamentos.jpg";
+
 const services = [
   {
     title: "Construção Civil",
     desc: "Prédios, casas e galpões comerciais. Suporte completo em todas as etapas da obra.",
     icon: Building2,
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop"
+    img: construcaoImg
   },
   {
-    title: "Fachadas Especializadas",
+    title: "SOLUÇÕES COMPLETAS PARA FACHADAS",
     desc: "Limpeza, pintura e aplicação de ladrilhos em edifícios de até 3 pavimentos.",
     icon: Paintbrush,
-    img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2000&auto=format&fit=crop"
+    img: fachadaImg
   },
   {
     title: "Impermeabilização",
     desc: "Soluções definitivas contra infiltrações com mantas asfálticas e impermeabilizantes líquidos.",
     icon: Droplets,
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop"
+    img: impermeabilizacaoImg
   },
   {
     title: "Acabamentos & Interiores",
     desc: "Pisos em porcelanato e granito, drywall, iluminação embutida e pinturas especiais.",
     icon: Grid3X3,
-    img: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2000&auto=format&fit=crop"
+    img: acabamentosImg
   },
   {
     title: "Instalações Técnicas",
     desc: "Projetos e execuções de redes elétricas e hidráulicas residenciais e industriais.",
     icon: Zap,
-    img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2000&auto=format&fit=crop"
+    img: instalacoesImg
   },
   {
-    title: "Construção Civil & Base",
-    desc: "Terraplanagem, fundações de muro de blocos e alvenaria estrutural.",
+    title: "Aluguel de Equipamentos Comerciais e Industriais",
+    desc: "Andaimes em grandes e pequenos navios, pintura em balsas e revestimento de maquinário industrial.",
     icon: HardHat,
-    img: "https://images.unsplash.com/photo-1574621100236-d25b64cfd647?q=80&w=2000&auto=format&fit=crop"
+    img: equipamentosImg
   }
 ];
 
@@ -105,7 +112,8 @@ export default function Services() {
                    <img 
                     src={service.img} 
                     alt={service.title} 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-40 group-hover:opacity-60"
+                    className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 md:group-hover:scale-110 transition-all duration-700 opacity-60 md:opacity-40 group-hover:opacity-60"
+                    referrerPolicy="no-referrer"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-brand-concrete via-brand-concrete/50 to-transparent" />
                 </div>
@@ -114,12 +122,16 @@ export default function Services() {
                   <div className="w-12 h-12 bg-brand-gold rounded font-bold flex items-center justify-center text-brand-concrete mb-4 group-hover:scale-110 transition-transform">
                     <service.icon className="w-6 h-6" />
                   </div>
-                  <h4 className="text-2xl font-bold italic tracking-tighter uppercase mb-2">
-                    {service.title}
-                  </h4>
-                  <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                    {service.desc}
-                  </p>
+                  <div className="min-h-[64px] flex items-start mb-2">
+                    <h4 className="text-2xl font-bold italic tracking-tighter uppercase">
+                      {service.title}
+                    </h4>
+                  </div>
+                  <div className="h-16">
+                    <p className="text-slate-300 text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transform translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                      {service.desc}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
           ))}
