@@ -6,54 +6,44 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-concrete via-brand-concrete/90 to-transparent z-10" />
+        <div className="absolute inset-0 bg-brand-concrete/70 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-concrete via-transparent to-brand-concrete/40 z-10" />
         <img 
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
           alt="Construction Site" 
-          className="w-full h-full object-cover opacity-30 grayscale"
+          className="w-full h-full object-cover opacity-50 grayscale"
+          referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 pointer-events-none" />
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
       </div>
 
       <div className="container mx-auto px-6 lg:px-8 relative z-20">
-        <div className="max-w-4xl">
-          <motion.div
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-6"
-          >
-            <Shield className="text-brand-gold w-5 h-5" />
-            <span className="text-brand-gold font-mono text-sm tracking-[0.3em] uppercase">
-              Solidez e Segurança
-            </span>
-          </motion.div>
-
-          <motion.h1 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl font-black italic tracking-tighter leading-[0.9] mb-8"
+            className="text-6xl md:text-8xl font-black italic tracking-tight leading-[0.9] mb-8 uppercase"
           >
-            PROTEÇÃO <br />
-            <span className="text-brand-gold">DA SUA OBRA</span>
+            Excelência <br />
+            <span className="text-brand-gold">em cada obra</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-slate-400 text-lg md:text-xl max-w-xl mb-10 font-light leading-relaxed"
+            className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 font-light leading-relaxed"
           >
-            Especialistas em construções e empreendimentos. Do alicerce ao acabamento, 
-            entregamos resultados que valorizam seu imóvel residencial, comercial ou industrial.
+            Especialistas em construções e empreendimentos de alto padrão. Do alicerce ao acabamento, 
+            entregamos resultados que valorizam seu imóvel residencial, comercial ou industrial com precisão técnica.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
             <a 
               href="#services"
@@ -66,9 +56,9 @@ export default function Hero() {
               href="https://wa.me/5521988602815?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os."
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/20 hover:border-brand-gold hover:text-brand-gold px-8 py-4 font-bold uppercase tracking-widest flex items-center justify-center transition-all bg-white/5 backdrop-blur-sm"
+              className="border border-white/20 hover:border-brand-gold hover:text-brand-gold px-12 py-4 font-bold uppercase tracking-widest flex items-center justify-center transition-all bg-white/5 backdrop-blur-sm"
             >
-              Fale com um Especialista
+              Orcamento via WhatsApp
             </a>
           </motion.div>
         </div>
