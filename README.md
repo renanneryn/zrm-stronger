@@ -39,7 +39,7 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/ztm-strong.git
+   git clone https://github.com/renanneryn/zrm-stronger.git
    ```
 
 2. **Instale as dependências (preferencialmente usando npm):**

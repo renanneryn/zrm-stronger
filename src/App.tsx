@@ -40,17 +40,27 @@ export default function App() {
         <Values />
         
         {/* About Short Section */}
-        <section id="about" className="py-20 bg-brand-concrete relative overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <section id="about" className="py-24 bg-brand-concrete relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="relative lg:order-1"
               >
+                {/* Visual content for the left side */}
+                <div className="relative aspect-square bg-slate-800 overflow-hidden border border-brand-gold/10 shadow-2xl rounded-sm">
+                  <img 
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80" 
+                    alt="ZTM Strong Obra Profissional" 
+                    className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-concrete/60 to-transparent" />
+                </div>
                 {/* Accent Boxes */}
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-brand-gold/30 -z-10" />
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-brand-gold/40 -z-10" />
                 <div className="absolute -top-6 -left-6 w-48 h-48 border border-white/5 -z-10" />
               </motion.div>
 
@@ -58,6 +68,7 @@ export default function App() {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
+                className="lg:order-2"
               >
                 <h2 className="text-brand-gold font-mono text-sm tracking-[0.3em] uppercase mb-4">Tradição & Inovação</h2>
                 <h3 className="text-4xl md:text-5xl font-black italic tracking-tighter uppercase mb-6 leading-none">
