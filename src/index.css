@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Outfit", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-bronze: #b45309;
+  --color-brand-copper: #92400e;
+  --color-brand-steel: #334155;
+  --color-brand-concrete: #1e293b;
+  --color-brand-gold: #d97706;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-concrete text-slate-100 antialiased selection:bg-brand-bronze/30 selection:text-brand-gold;
+  }
+}
+
+.metallic-finish {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.05) 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.concrete-texture {
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)),
+    url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.glow-bronze {
+  box-shadow: 0 0 20px rgba(180, 83, 9, 0.2);
+}
+
+.logo-shield-text {
+  background: linear-gradient(to bottom, #f1f5f9 0%, #94a3b8 50%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.logo-bronze-text {
+  background: linear-gradient(to bottom, #fbbf24 0%, #b45309 50%, #78350f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+}

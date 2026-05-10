@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        // Polyfill process and global
+        window.global = window;
+        window.process = window.process || {
+          env: { NODE_ENV: 'development' },
+          version: '',
+          nextTick: function(fn) { setTimeout(fn, 0); }
+        };
+
+        // Safeguard against fetch overwrite
+        // This prevents "Uncaught TypeError: Cannot set property fetch of #<Window> which has only a getter"
+        try {
+          var _fetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return _fetch; },
+            set: function(v) { 
+               _fetch = v;
+               console.log('fetch overwritten safely');
+            }
+          });
+        } catch (e) {
+          console.warn('Fetch safeguard failed - window.fetch might be non-configurable');
+        }
+
+        // Safeguard against JSON.parse("undefined") which commonly causes "Uncaught SyntaxError: "undefined" is not valid JSON"
+        var originalParse = JSON.parse;
+        JSON.parse = function(text, reviver) {
+          if (text === "undefined" || text === undefined) {
+            console.warn("DEBUG: Caught JSON.parse('undefined') or JSON.parse(undefined). Returning null to avoid crash.");
+            return null;
+          }
+          return originalParse(text, reviver);
+        };
+      })();
+    </script>
+    <title>ZTM STRONG | Construção Civil e Empreendimentos</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
