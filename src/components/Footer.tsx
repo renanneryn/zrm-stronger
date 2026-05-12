@@ -1,4 +1,4 @@
-import { Shield, Building2, Home, Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
+import { Shield, Building2, Home, Phone, Mail, MapPin, Instagram } from "lucide-react";
 import logo from "../assets/logo.png";
 
 export default function Footer() {
@@ -33,9 +33,6 @@ export default function Footer() {
               <a href="#" className="h-10 w-10 border border-white/10 rounded flex items-center justify-center hover:bg-brand-gold hover:text-brand-concrete transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="h-10 w-10 border border-white/10 rounded flex items-center justify-center hover:bg-brand-gold hover:text-brand-concrete transition-all">
-                <Facebook className="w-5 h-5" />
-              </a>
             </div>
           </div>
 
@@ -64,11 +61,11 @@ export default function Footer() {
             <ul className="space-y-4 text-slate-500 text-sm">
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-brand-gold" />
-                (21) 98860-2815
+                (21) 98088-1200
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-gold" />
-                contato@ztmstrong.com.br
+                ztmstrong@gmail.com
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-gold shrink-0 mt-1" />

@@ -111,7 +111,7 @@ export default function App() {
               Chega de dor de cabeça com obra atrasada, desperdício de material e serviço mal executado. A ZTM Strong assume o controle para você não ter preocupações. Entregamos seu projeto no prazo, com respeito ao seu orçamento e qualidade de verdade.
             </p>
             <a 
-              href="https://wa.me/5521988602815?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os."
+              href="https://wa.me/5521980881200?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-brand-concrete text-white px-10 py-5 font-black uppercase tracking-[0.2em] hover:bg-white hover:text-brand-concrete transition-all shadow-2xl"

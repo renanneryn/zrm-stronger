@@ -53,7 +53,7 @@ export default function Hero() {
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
-              href="https://wa.me/5521988602815?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os."
+              href="https://wa.me/5521980881200?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os."
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white/20 hover:border-brand-gold hover:text-brand-gold px-12 py-4 font-bold uppercase tracking-widest flex items-center justify-center transition-all bg-white/5 backdrop-blur-sm"

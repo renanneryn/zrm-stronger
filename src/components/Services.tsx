@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Building2, Paintbrush, Droplets, Grid3X3, Zap, HardHat } from "lucide-react";
 
 import construcaoImg from "../assets/construcao.jpg";
-import fachadaImg from "../assets/fachada-1.jpg";
+import fachadaImg from "../assets/fachada.jpg";
 import impermeabilidadeImg from "../assets/impermeabilidade.jpg";
 import acabamentosImg from "../assets/acabamentos.jpg";
 import tecnicasImg from "../assets/tecnicas.jpg";

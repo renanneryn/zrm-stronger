@@ -41,7 +41,7 @@ export default function Header() {
         </nav>
 
         <a 
-          href="https://wa.me/5521988602815?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os." 
+          href="https://wa.me/5521980881200?text=Ol%C3%A1%20vim%20do%20site%20ZTM%20Strong%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os." 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-brand-bronze hover:bg-brand-gold text-white px-5 py-2 rounded-none font-bold text-xs uppercase tracking-widest transition-all glow-bronze"
