@@ -98,7 +98,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto snap-x snap-mandatory pb-8 -mx-6 px-6 md:px-0 md:mx-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -106,13 +106,13 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative h-[400px] overflow-hidden metallic-finish"
+                className="group relative h-[400px] overflow-hidden metallic-finish shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center md:snap-align-none"
               >
                 <div className="absolute inset-0 z-0">
                    <img 
                     src={service.img} 
                     alt={service.title} 
-                    className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 md:group-hover:scale-110 transition-all duration-700 opacity-60 md:opacity-40 group-hover:opacity-60"
+                    className="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-60"
                     referrerPolicy="no-referrer"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-brand-concrete via-brand-concrete/50 to-transparent" />
@@ -126,7 +126,7 @@ export default function Services() {
                     {service.title}
                   </h4>
                   <div className="h-16 mt-2">
-                    <p className="text-slate-300 text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transform translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <p className="text-slate-300 text-sm transition-all duration-500">
                       {service.desc}
                     </p>
                   </div>

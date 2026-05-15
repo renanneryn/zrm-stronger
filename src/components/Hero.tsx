@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import { Shield, ChevronRight } from "lucide-react";
 
+import logo from "../assets/logo.png";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
@@ -19,6 +21,14 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-20">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <motion.img 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            src={logo} 
+            alt="ZTM Strong Logo" 
+            className="w-32 md:w-48 mb-8 drop-shadow-2xl"
+          />
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
