@@ -15,63 +15,98 @@ const works = [
   {
     title: "Obra de Finalização do Coletor Tronco de Faria Timbó e Manguinhos",
     category: "Saneamento",
-    description: "Atuo como fiscal de obra no gerenciamento do projeto de saneamento da Obra do Coletor Tronco de Esgoto no Bairro de Faria Timbó e Manguinhos, na cidade do Rio de Janeiro. Experiência em Relatórios Gerenciais, controle de custos e do Planejamento da obra.",
+    description: [
+      "Atuamos como fiscais de obra no gerenciamento do projeto de saneamento da Obra do Coletor Tronco de Esgoto no Bairro de Faria Timbó e Manguinhos, na cidade do Rio de Janeiro.",
+      "Experiência em Relatórios Gerenciais, controle de custos e do Planejamento da obra."
+    ],
     images: proj1,
     colSpan: "md:col-span-12 lg:col-span-8 lg:row-span-2"
   },
   {
     title: "Obra de montagem da loja do Zé de Delivre",
     category: "Montagem de Loja",
-    description: "Assessoria da finalização e entrega ao cliente de uma loja de distribuição de bebidas do Zé Delivre direto do centro de distribuição principal da Ambev. A obra estava com ¼ de conclusão e foi feito uma força tarefa de entrega em tempo recorde de 2 meses com toda a conclusão.",
+    description: [
+      "Trabalhamos na assessoria da finalização e entrega ao cliente de uma loja de distribuição de bebidas do Zé Delivre direto do centro de distribuição principal da Ambev.",
+      "A obra estava com ¼ de conclusão e foi feito uma força tarefa de entrega em tempo recorde de 2 meses com toda a conclusão."
+    ],
     images: proj2,
     colSpan: "md:col-span-6 lg:col-span-4"
   },
   {
     title: "Obra de Terraplanagem da empresa Via Sul",
     category: "Terraplanagem",
-    description: "Obra de Terraplanagem da empresa Via Sul.",
+    description: [
+      "Obra de Terraplanagem da empresa Via Sul."
+    ],
     images: proj4,
     colSpan: "md:col-span-6 lg:col-span-4"
   },
   {
     title: "Obra de Retrofit do Antigo Hotel Novo Mundo",
     category: "Retrofit e Adaptação Comercial",
-    description: "Esta é uma obra de Retrofit, onde o antigo hotel foi todo adaptado e modernizado, para um novo seguimento comercial no Rio de Janeiro o Student House. Toda as instalações e móveis dos aptos foram modificadas e atualizadas. Algumas características foram mantidas e reformadas para manter a identidade do antigo hotel.",
+    description: [
+      "Esta é uma obra de Retrofit, onde o antigo hotel foi todo adaptado e modernizado.",
+      "Toda as instalações e móveis dos aptos foram modificadas e atualizadas.",
+      "Algumas características foram mantidas e reformadas para manter a identidade do antigo hotel.",
+      "Esta é uma obra de Retrofit, onde o antigo hotel foi todo adaptado e modernizado.",
+      "Toda as instalações e móveis dos aptos foram modificadas e atualizadas.",
+      "Adaptado para um novo seguimento comercial no Rio de Janeiro o Student House.",
+      "Algumas características foram mantidas e reformadas para manter a identidade do antigo hotel.",
+      "Toda as instalações e móveis dos aptos foram modificadas e atualizadas."
+    ],
     images: proj3,
     colSpan: "md:col-span-6 lg:col-span-4 lg:row-span-2"
   },
   {
     title: "Obra de Terraplanagem da empresa Emccamp",
     category: "Terraplanagem",
-    description: "Obra de Terraplanagem da empresa Emccamp.",
+    description: [
+      "Obra de Terraplanagem da empresa Emccamp."
+    ],
     images: proj5,
     colSpan: "md:col-span-6 lg:col-span-8"
   },
   {
     title: "Condomínio Solar de Aveiros",
     category: "Muro de Contenção e Talude",
-    description: "Construção do muro de contenção. Aplicação da manta vegetal e tela sobre o talude com a fixação por grampos de 25,00m cada. Plantação de capim Vertiver no talude. Forma e armação do 2º muro atirantado na divisa do terreno.",
+    description: [
+      "Construção do muro de contenção. Vista do prédio vizinho da parte superior da contenção.",
+      "Logo abaixo, o talude em 45º com 300 grampos de 25,00m cada.",
+      "Aplicação da manta vegetal e tela sobre o talude com a fixação por grampos de 25,00m cada.",
+      "Plantação de capim Vertiver no talude: importado do Congo, este tipo de capim chega a 1,00m de altura e sua raiz, a 5,00m de profundidade.",
+      "Forma e armação do 2º muro atirantado na divisa do terreno e no nível da construção, deixando tudo preparado."
+    ],
     images: proj7,
     colSpan: "md:col-span-12 lg:col-span-8"
   },
   {
     title: "Obra de Retrofit da Rede de hotéis Atlântico",
     category: "Retrofit",
-    description: "Obra de Retrofit da Rede de hotéis Atlântico na Av Gomes Freire 196 – Centro – RJ.",
+    description: [
+      "Obra de Retrofit da Rede de hotéis Atlântico na Av Gomes Freire 196 – Centro – RJ."
+    ],
     images: proj6,
     colSpan: "md:col-span-12 lg:col-span-12"
   },
   {
     title: "Condomínio Morada Carioca",
     category: "Acabamento e Paisagismo",
-    description: "Fase de acabamento. Inicio da pavimentação com intertravado. Área comum e paisagismo do prédio finalizado. Apartamento pronto para entrega ao cliente.",
+    description: [
+      "Início da fase de acabamento.",
+      "Inicio da pavimentação com intertravado.",
+      "Área comum e paisagismo do prédio finalizado.",
+      "Apartamento pronto para entrega ao cliente."
+    ],
     images: proj8,
     colSpan: "md:col-span-6 lg:col-span-6"
   },
   {
     title: "Residencial Palazzo Strelitzia Biancha",
     category: "Fase de Acabamento",
-    description: "Fase de acabamento: aplicação de pastilha na fachada. Stand de vendas: entrada da construção.",
+    description: [
+      "Fase de acabamento: aplicação de pastilha na fachada.",
+      "Stand de vendas: entrada da construção."
+    ],
     images: proj9,
     colSpan: "md:col-span-6 lg:col-span-6"
   }
@@ -113,9 +148,19 @@ function ProjectCard({ work, index, colSpan }: { work: any; index: number; colSp
         <h4 className="text-2xl md:text-3xl font-black italic uppercase leading-none mb-3 transition-all duration-500">
           {work.title}
         </h4>
-        <p className="text-slate-300 text-sm max-w-xl transition-all duration-500 delay-150">
-          {work.description}
-        </p>
+        <div className="min-h-[60px] flex items-end">
+          <motion.p 
+            key={activeImage}
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-slate-300 text-sm max-w-xl w-full"
+          >
+            {Array.isArray(work.description) 
+              ? work.description[activeImage % work.description.length] 
+              : work.description}
+          </motion.p>
+        </div>
         
         {work.images.length > 1 && (
           <div className="absolute top-4 right-4 flex space-x-1">
