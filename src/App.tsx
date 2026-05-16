@@ -11,7 +11,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import SocialProof from "./components/SocialProof";
 import Values from "./components/Values";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -38,7 +37,6 @@ export default function App() {
         <Hero />
         
         <Services />
-        <SocialProof />
         <Values />
         
         {/* About Short Section */}
