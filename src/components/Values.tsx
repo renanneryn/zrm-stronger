@@ -4,7 +4,11 @@ import { UserCheck, Clock, TrendingUp, ShieldCheck } from "lucide-react";
 const values = [
   {
     title: "Profissionais Qualificados",
-    desc: "Mão de obra treinada e experiente em cada especialidade.",
+    desc: (
+      <>
+        Mão de obra treinada e experiente em cada especialidade, incluindo profissionais com <strong className="text-brand-gold font-bold border-b border-brand-gold/30 pb-0.5">mais de 15 anos de experiência</strong> no mercado.
+      </>
+    ),
     icon: UserCheck
   },
   {

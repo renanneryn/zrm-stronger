@@ -68,7 +68,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="border border-white/20 hover:border-brand-gold hover:text-brand-gold px-12 py-4 font-bold uppercase tracking-widest flex items-center justify-center transition-all bg-white/5 backdrop-blur-sm"
             >
-              Orcamento via WhatsApp
+              ORÇAMENTO VIA WHATSAPP
             </a>
           </motion.div>
         </div>
